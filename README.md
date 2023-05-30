@@ -4,9 +4,9 @@ KEY FEATURES :
 
 technologies used - **Html Css Js** <br>
 **Full animated and responsive Web Design** <br>
-**Modern UI design <br>
-Admin Login System <br>
-**
+**Modern UI design **<br>
+**Admin Login System **<br>
+
 
 
 
