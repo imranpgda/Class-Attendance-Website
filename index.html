@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- //LOTTIE PLAYER SRC -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+    <!-- //LOTTIE PLAYER SRC -->
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginstyle.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Attend_BCA_imranpgda</title>
+</head>
+
+<body>
+
+
+
+
+    <!-- ****************************** ANIMATED BACKGROUND -->
+    <div class="area">
+        <h1 id="adname">Admin Authentication</h1>
+
+
+ <div class="animcontainer">
+
+
+ </div>
+
+
+
+
+
+
+        <form id="formmain" name="loginform" method="post">
+            <div class="formdesmain">
+                <h3> Enter Credential </h3>
+
+
+                <!-- FACE EXPRESSION -->
+                <div class="emoji" id="emojid">
+                    <div class="normal">
+                        
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_8ptubsmp.json"  background="transparent"  speed="1"  style="width: 220px; height: 220px;"  loop  autoplay></lottie-player>    
+
+                    </div>
+                    <div class="name">
+                      <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_a53bvgno.json"  background="transparent"  speed="1"  style="width: 180px; height: 180px;"  loop  autoplay></lottie-player>
+                    </div>
+                    <div class="pass">
+                        <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_udxdxhu0.json"  background="transparent"  speed="1"  style="width: 180px; height: 180px;"  loop  autoplay></lottie-player>  
+                    </div>
+                    <div class="click">
+                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_bhu5iuvq.json"  background="transparent"  speed="1"  style="width: 180px; height: 180px;"  loop  autoplay></lottie-player>
+                    </div>
+                </div>
+
+
+                <!-- *****************************INPUT SECTION -->
+
+                <div class="inputsection">
+                    <!--      NAME INPUT -->
+                    <div class="input ">
+                        <input type="text" id="akname" name="aname" placeholder="Admin Name" autocomplete="on" required>
+                        <!-- // KEY INPUT -->
+                    </div>
+                    <div class="input ">
+                        <input type="password" id="akpass" name="apass" placeholder="Admin Key" autocomplete="on"
+                            required>
+                            
+                    </div>
+                </div>
+
+
+
+
+                <!-- //LOGIN BUTTON -->
+                <button class="inpdata" id="btn" type="button" onmouseover="buttonhover()" value="Login"
+                    onclick="loginfunc()"><i class="fa-solid fa-paper-plane" id="sendicon"></i> Login
+                </button>
+
+            </div>
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <div class="devname">
+                <span>Developer : </span>
+                <span id="iname">Imran khan</span>
+            </div>
+    </div>
+    </form>
+
+</body>
+
+<script src="emojiact.js"></script>
+
+<script>
+    
+    function loginfunc() {
+
+        let logname = document.forms['loginform']['aname'].value;
+        let logpass = document.forms['loginform']['apass'].value;
+
+        if (logname = "imran" && logpass=="1234"){
+            window.location.href = "main.html";
+        } else if(logname=="asfiya" && logpass=="7890"){ 
+            window.location.href = "main.html";
+        }
+        else {
+            <!-- alert("Wrong credential") ; -->
+            alert("Wrong Id or Key \n If you are getting any issue or found any bug \n Plz report it to the Developer : @imranpgda ");
+        }
+    }
+</script>
+
+</html>

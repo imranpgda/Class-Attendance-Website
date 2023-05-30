@@ -1,0 +1,444 @@
+@font-face {
+  font-family: "darlington";
+  src: url(font/Darlington\ Demo.otf);
+}
+@font-face {
+  font-family: "exo";
+  src: url(font/Exo-Medium.otf);
+}
+@font-face {
+  font-family: "nexa";
+  src: url(font/Nexa\ Bold.otf);
+}
+@font-face {
+  font-family: "bredan";
+  src: url(font/The\ Bredan\ Demo.otf);
+}
+@font-face {
+font-family: "avenir";
+src: url(font/AvenirLTStd-Black.otf);
+}
+
+@font-face {
+font-family: "calvier";
+src: url(font/Calvier.ttf);
+}
+@font-face {
+font-family: "helvetica";
+src: url(font/HelveticaNeue\ Regular.ttf);
+}
+@font-face {
+font-family: "helveticabold";
+src: url(font/HelveticaNeue\ Medium.ttf);
+}
+@font-face {
+font-family: "starkey";
+src: url(font/Starkey_PERSONAL_USE.ttf);
+}
+@font-face {
+font-family: "montgomery";
+src: url(font/Montgomery-BF6451f6602b250.otf);
+}
+
+
+
+/* ******************** ANIMATED BACKGROUND ***************** */
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+*{
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+ 
+}
+body{
+ margin: 0px;
+ box-sizing: border-box;
+}
+.area{
+    background: #4e54c8;  
+}
+
+
+.devname #iname{
+  color: white;
+  padding-top: 20px 20px;
+  font-family: darlington;
+  font-size: 30px;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 10s alternate-reverse infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+}
+
+/* *********************** ANIMATED BACKGROUND ****************** */
+
+#adname{
+    color: whitesmoke;
+   font-family: calvier;
+   padding-top: 10px;
+   padding-left: 10px;
+   border-left: 5px solid salmon;
+   margin: 10px 10px;
+   margin-bottom: 35px;
+   
+}
+#formmain{
+  
+    border-radius: 15px;
+    padding: 50px; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+h3{
+    font-family: bredan;
+   
+    color: wheat;
+    font-size: 40px;
+    
+}
+.formdesmain{
+
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    padding: 20px 20px;
+   border-radius: 15px;
+   z-index: 1;
+
+}
+
+/* INPUT SECTION CSS */
+
+.inputsection{
+
+ display: inline-block;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding: 10px 10px;
+  border: 1.5px solid rgb(255, 255, 255) ;
+  border-radius: 10px;
+  box-shadow: rgb(82, 52, 255) -5px 5px 70px;
+}
+
+.input{
+ 
+  margin-left: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+margin-bottom: 10px;
+  border: 0px solid black;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+input{
+ margin: left 5px; ;
+  border: 0px ;
+  border-radius: 5px;
+  padding: 15px 15px;
+  font-family: exo;
+  font-size: 18px;
+  height: 35px;
+  width: 200px;
+}  
+
+
+
+
+/* INPUT SECTION CSS */
+
+
+  .emoji{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 7rem;
+    user-select: none;
+  }
+  .normal,.name,.pass,.click{
+    transition: all 0.4s ease-in-out;
+    display: none;
+  }
+
+  .active{
+    display: block;
+  }
+.deactive{
+  display: none;
+}
+
+
+/* **********************  BUTTON  */
+
+.inpdata #sendicon{
+padding-left: 0px;
+margin-right: 10px;
+}
+.inputfield #usericon{
+  font-size: larger;
+  color: black
+
+}
+.inpdata{
+  background-color: white;
+  justify-content: center;
+  justify-items: center;
+}
+#btn{
+  justify-items: center;
+  height: 36px;
+  border: 2px solid #000000;
+  transition: all .35s ease;
+  margin-top: 20px;
+  font-family: exo;
+  font-size: large;
+  width: 130px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+
+
+
+  /*  ************ ANIMATION SECTION *************** */
+
+#animcontainer{
+  height: 100px;
+  width: 100px;
+}
+
+
+
+
+
+
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+  /* LOGIN BUTTON ANIMATION */
+
+.inpdata {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.inpdata:before {
+    content: '';
+    background: linear-gradient(45deg, #d99191, #e6bc9a, #f8f69f, #b5ff98, #86ebda, #8896dc, #c598f5, #ffaced, #efa0a0);
+    position: absolute;
+    color: black;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    animation: glowing 15s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.inpdata:active {
+    color: #000
+}
+
+.inpdata:active:after {
+  color: black;
+    background: transparent;
+}
+
+.inpdata:hover:before {
+  color: black;
+    opacity: 0.9;
+}
+button:hover{
+  color: black;
+}
+.inpdata:after {
+  color: black;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 100% 0; }
+}
+
+
+/* 
+//LOGIN BUTTON ANIMATION */
+
+.hidden {
+	visibility: hidden;
+}
+
+#base {
+	cursor: pointer;
+}
+
+
+/* ///NEW ANIMATION CLICKED */
+  .formdesmain{
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+  .formdesmain:hover{
+    top:-8px;
+  }
+
+  #btn:hover{
+    width: 150px;
+    border: 1px solid rgb(17, 12, 12);
+  }
+  
+  /*  ************ ANIMATION SECTION *************** */
+  
+  /* DEVNAME FOOTER  */
+.devname{
+  margin-top: 120px;
+  color: white;
+  background-color: transparent;
+  font-family: exo;
+
+}
