@@ -3,9 +3,9 @@ A very Useful website that can take attendance and store all the counts + name a
 KEY FEATURES :
 
 technologies used - **Html Css Js** <br>
-**Full animated and responsive Web Design**
-**Modern UI design
-Admin Login System
+**Full animated and responsive Web Design** <br>
+**Modern UI design <br>
+Admin Login System <br>
 **
 
 
